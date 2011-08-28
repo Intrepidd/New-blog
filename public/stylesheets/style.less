@@ -3,6 +3,17 @@
 
 @import "boilerplate.css";
 
+/* ----------- */
+/*    Fonts    */
+
+@font-face {
+  font-family:"Monaco";
+  src:url('fonts/monaco.ttf');
+  src:local('Monaco'), url('fonts/monaco.ttf') format('truetype');
+}
+
+/* ----------- */
+
 body {
   background-color:white;
   width:80%;
@@ -13,8 +24,28 @@ body {
   width:100%;
   margin-top:35px;
   #name {
+    width:60%;
     font-family: "Monaco", "Arial";
     float:left;
     font-size:5em;
+    span {
+      display:block;
+      font-size:0.4em;
+      padding-left:150px;
+      margin-top:5px;
+    }
+  }
+  #bio {
+    float:right;
+    padding-top:15px;
+    text-align:left;
+    width:40%;
+    font-size:1.2em;
+    font-family: Arial;
+    #whoami {
+      font-size:1.7em;
+      font-family: "Monaco", "Arial";
+      padding-bottom:15px;
+    }
   }
 }
