@@ -18,17 +18,17 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <header>
-    <div id="header" class="clearfix">
-      <div id="name">
+  <section id="top">
+    <section class="clearfix">
+      <header>
         Adrien Siami
         <span>Web & Software Developer.</span>
-      </div>
-      <div id="bio">
+      </header>
+      <footer>
         <div id="whoami">Qui suis-je ?</div>
-        19 ans, étudiant en 3ème année à <a href="http://epitech.eu">Epitech paris</a>. Eternel amoureux des téchnologies du web, Utilisateur de fedora.
-      </div>
-    </div>
+          19 ans, étudiant en 3ème année à <a href="http://epitech.eu">Epitech paris</a>. Eternel amoureux des téchnologies du web, Utilisateur de fedora.
+      </footer>
+    </section>
     <nav class="clearfix">
       <ul>
         <li>$></li>
@@ -37,12 +37,16 @@
         <li><a href="#">CV</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-  <%= yield %>
-  <footer>
-    Par Adrien Siami. Le code source de cette application est <a href="http://github.com/Intrepidd/New-blog">disponible sur github</a>.
-  </footer>
+</nav>
+  </section>
+  <section id="content">
+    <%= yield %>
+  </section>
+  <section id="down">
+    <footer>
+      Par Adrien Siami. Le code source de cette application est <a href="http://github.com/Intrepidd/New-blog">disponible sur github</a>.
+    </footer>
+  </section>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
