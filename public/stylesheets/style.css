@@ -2,5 +2,7 @@
 @font-face{font-family:"Monaco";src:url('fonts/monaco.ttf');src:local('Monaco'),url('fonts/monaco.ttf') format('truetype');}body{min-width:1000px;background-color:white;width:80%;margin:auto;}
 #header{width:100%;margin-top:35px;}#header #name{width:60%;font-family:"Monaco","Arial";float:left;font-size:5em;}#header #name span{display:block;font-size:0.4em;padding-left:150px;margin-top:5px;}
 #header #bio{float:right;padding-top:15px;text-align:left;width:40%;font-size:1.2em;font-family:Arial;}#header #bio #whoami{font-size:1.7em;font-family:"Monaco","Arial";padding-bottom:15px;}
+#menu{width:100%;margin:20px 0px 20px 0px;}#menu a{font-weight:normal;}
+#menu ul li{list-image:none;list-style-type:none;float:left;padding-right:15px;font-size:1.5em;}
 a{text-decoration:none;color:#4DB85F;font-weight:bold;}a:hover{text-decoration:underline;}
 a:visited{color:#4DB85F;}
