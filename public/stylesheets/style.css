@@ -2,8 +2,8 @@
 @font-face{font-family:"Monaco";src:url('fonts/monaco.ttf');src:local('Monaco'),url('fonts/monaco.ttf') format('truetype');}body{min-width:1000px;background-color:white;width:80%;margin:auto;}
 header #header{width:100%;margin-top:35px;}header #header #name{width:60%;font-family:"Monaco","Arial";float:left;font-size:5em;}header #header #name span{display:block;font-size:0.4em;padding-left:150px;margin-top:5px;}
 header #header #bio{float:right;padding-top:15px;text-align:left;width:40%;font-size:1.2em;font-family:Arial;}header #header #bio #whoami{font-size:1.7em;font-family:"Monaco","Arial";padding-bottom:15px;}
-header #menu{width:100%;margin:20px 0px 30px 0px;}header #menu a{font-weight:normal;}
-header #menu ul li{list-image:none;list-style-type:none;float:left;padding-right:15px;font-size:1.5em;}
-footer{width:100%;margin-top:40px;font-size:0.9em;}
+header nav{width:100%;margin:20px 0px 30px 0px;}header nav a{font-weight:normal;}
+header nav ul{padding:0;}header nav ul li{list-image:none;list-style-type:none;float:left;padding-right:15px;font-size:1.5em;}
+footer{width:100%;margin-top:40px;font-size:0.9em;color:#666;}
 a{text-decoration:none;color:#4DB85F;font-weight:bold;}a:hover{text-decoration:underline;}
 a:visited{color:#4DB85F;}
