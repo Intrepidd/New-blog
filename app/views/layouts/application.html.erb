@@ -18,26 +18,31 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div id="header" class="clearfix">
-    <div id="name">
-      Adrien Siami
-      <span>Web & Software Developer.</span>
+  <header>
+    <div id="header" class="clearfix">
+      <div id="name">
+        Adrien Siami
+        <span>Web & Software Developer.</span>
+      </div>
+      <div id="bio">
+        <div id="whoami">Qui suis-je ?</div>
+        19 ans, étudiant en 3ème année à <a href="http://epitech.eu">Epitech paris</a>. Eternel amoureux des téchnologies du web, Utilisateur de fedora.
+      </div>
     </div>
-    <div id="bio">
-      <div id="whoami">Qui suis-je ?</div>
-      19 ans, étudiant en 3ème année à <a href="http://epitech.eu">Epitech paris</a>. Eternel amoureux des téchnologies du web, Utilisateur de fedora.
+    <div id="menu" class="clearfix">
+      <ul>
+        <li>$></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">CV</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-  </div>
-  <div id="menu" class="clearfix">
-    <ul>
-      <li>$></li>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">A propos</a></li>
-      <li><a href="#">CV</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
   </div>
   <%= yield %>
+  <footer>
+    Par Adrien Siami. Le code source de cette application est <a href="http://github.com/Intrepidd/New-blog">disponible sur github</a>.
+  </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
