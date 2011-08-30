@@ -1,9 +1,12 @@
 @import "boilerplate.css";
 @font-face{font-family:"Monaco";src:url('fonts/monaco.ttf');src:local('Monaco'),url('fonts/monaco.ttf') format('truetype');}body{min-width:1000px;background-color:white;width:80%;margin:auto;}
 section#top{width:100%;margin-top:35px;}section#top header{width:60%;font-family:"Monaco","Arial";float:left;font-size:5em;}section#top header span{display:block;font-size:0.4em;padding-left:150px;margin-top:5px;}
-section#top footer{display:block;float:right;padding-top:15px;text-align:left;width:40%;font-size:1.2em;font-family:Arial;}section#top footer #whoami{font-size:1.7em;font-family:"Monaco","Arial";padding-bottom:15px;}
-section#top nav{width:100%;margin:20px 0px 30px 0px;}section#top nav a{font-weight:normal;}
+section#top footer{float:right;padding-top:15px;text-align:left;width:40%;font-size:1.2em;font-family:Arial;}section#top footer #whoami{font-size:1.7em;font-family:"Monaco","Arial";padding-bottom:15px;}
+section#top nav{width:100%;margin:40px 0px 20px 0px;}section#top nav a{font-weight:normal;}
 section#top nav ul{padding:0;}section#top nav ul li{list-image:none;list-style-type:none;float:left;padding-right:15px;font-size:1.5em;}
-section#down footer{width:100%;margin-top:40px;font-size:0.9em;color:#666;}
+section#content{width:100%;}section#content article header{border-bottom:1px solid #DBDBDB;margin:15px;padding:5px;}section#content article header time{margin-right:5px;}section#content article header time:after{content:">";padding-left:10px;}
+section#content article header span.title{text-transform:capitalize;font-size:1.6em;font-family:Monaco;}section#content article header span.title a{color:#222;font-weight:normal;}
+section#content article section.article_text{padding-left:40px;font-size:1.1em;}
+section#down footer{width:100%;margin:40px 0 40px 0;font-size:0.9em;color:#666;}
 a{text-decoration:none;color:#4DB85F;font-weight:bold;}a:hover{text-decoration:underline;}
 a:visited{color:#4DB85F;}
