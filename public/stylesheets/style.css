@@ -7,6 +7,8 @@ section#top nav ul{padding:0;}section#top nav ul li{list-image:none;list-style-t
 section#content{width:100%;}section#content article header{border-bottom:1px solid #DBDBDB;margin:15px;padding:5px;}section#content article header time{margin-right:5px;}section#content article header time:after{content:">";padding-left:10px;}
 section#content article header span.title{text-transform:capitalize;font-size:1.6em;font-family:Monaco;}section#content article header span.title a{color:#222;font-weight:normal;}
 section#content article section.article_text{padding-left:40px;font-size:1.1em;}
+section#content form input.shadow,section#content form textarea.shadow{border:2px solid #d2d9dc;box-shadow:0px 0px 4px 4px #f7f9fa;outline:none;border-radius:3px;}section#content form input.shadow:focus,section#content form textarea.shadow:focus{border-color:#b7d4ea;box-shadow:0px 0px 4px 4px #f0f7fc;}
+section#content form table td{padding-bottom:10px;}section#content form table td label{display:block;width:150px;}
 section#down footer{width:100%;margin:40px 0 40px 0;font-size:0.9em;color:#666;}
 a{text-decoration:none;color:#4DB85F;font-weight:bold;}a:hover{text-decoration:underline;}
 a:visited{color:#4DB85F;}

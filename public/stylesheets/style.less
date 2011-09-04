@@ -101,6 +101,27 @@ section#content {
 
     }
   }
+  form {
+    input.shadow, textarea.shadow {
+      border: 2px solid #d2d9dc;
+      box-shadow: 0px 0px 4px 4px #f7f9fa;
+      outline:none;
+      border-radius:3px;
+      &:focus {
+        border-color: #b7d4ea;
+        box-shadow: 0px 0px 4px 4px #f0f7fc;
+      }
+    }
+    table {
+      td {
+        padding-bottom:10px;
+        label {
+          display:block;
+          width:150px;
+        }
+      }
+    }
+  }
 }
 
 section#down {
