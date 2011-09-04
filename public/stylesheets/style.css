@@ -9,6 +9,7 @@ section#content article header span.title{text-transform:capitalize;font-size:1.
 section#content article section.article_text{padding-left:40px;font-size:1.1em;}
 section#content form input.shadow,section#content form textarea.shadow{border:2px solid #d2d9dc;box-shadow:0px 0px 4px 4px #f7f9fa;outline:none;border-radius:3px;}section#content form input.shadow:focus,section#content form textarea.shadow:focus{border-color:#b7d4ea;box-shadow:0px 0px 4px 4px #f0f7fc;}
 section#content form table td{padding-bottom:10px;}section#content form table td label{display:block;width:150px;}
+section#content section.error{padding:20px;margin-bottom:20px;color:#FC3246;font-size:1.2em;}
 section#down footer{width:100%;margin:40px 0 40px 0;font-size:0.9em;color:#666;}
 a{text-decoration:none;color:#4DB85F;font-weight:bold;}a:hover{text-decoration:underline;}
 a:visited{color:#4DB85F;}

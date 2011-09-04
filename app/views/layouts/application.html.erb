@@ -40,6 +40,12 @@
 </nav>
   </section>
   <section id="content">
+  <% if flash[:error] %>
+    <section class="error">
+      <%= flash[:error] %>
+      <% flash[:error] = nil %>
+    </section>
+  <% end %>
     <%= yield %>
   </section>
   <section id="down">
