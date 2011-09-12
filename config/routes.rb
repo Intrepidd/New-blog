@@ -4,6 +4,8 @@ NewBlog::Application.routes.draw do
 
   match '/' => 'home#index'
 
+  match '/about/me' => 'about#index'
+
   match '/admin(/:action(/:id(.:format)))' => 'admin'
 
   # Sample of regular route:
