@@ -1,0 +1,12 @@
+<h1>Nouvel article</h1>
+
+<%= form_tag do%>
+  <table>
+    <tr>
+      <td><%= label_tag :title, "Titre" %></td>
+      <td><%= text_field_tag :title, nil, {:class => "shadow long"} %></td>
+    </tr>
+  </table>
+  <%= text_area_tag :content, nil, {:class => "shadow", :cols => 90, :rows => 20} %><br /><br />
+  <%= submit_tag "Publier" %>
+<% end %>

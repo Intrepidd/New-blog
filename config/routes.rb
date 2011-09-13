@@ -6,8 +6,8 @@ NewBlog::Application.routes.draw do
 
   match '/about/me' => 'about#index'
 
-  match '/admin(/:action(/:id(.:format)))' => 'admin'
   match '/admin/posts/new' => 'admin#new_post'
+  match '/admin(/:action(/:id(.:format)))' => 'admin'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

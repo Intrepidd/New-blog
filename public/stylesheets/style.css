@@ -98,6 +98,10 @@ section#content article section.article_text {
   padding-left: 40px;
   font-size: 1.1em;
 }
+section#content form input.long, section#content form textarea.long {
+  width: 500px;
+  height: 20px;
+}
 section#content form input.shadow, section#content form textarea.shadow {
   border: 2px solid #d2d9dc;
   box-shadow: 0px 0px 4px 4px #f7f9fa;
