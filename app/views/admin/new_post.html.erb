@@ -4,9 +4,9 @@
   <table>
     <tr>
       <td><%= label_tag :title, "Titre" %></td>
-      <td><%= text_field_tag :title, nil, {:class => "shadow long"} %></td>
+      <td><%= text_field_tag :title, params[:title], {:class => "shadow long"} %></td>
     </tr>
   </table>
-  <%= text_area_tag :content, nil, {:class => "shadow", :cols => 90, :rows => 20} %><br /><br />
+  <%= text_area_tag :content, params[:content], {:class => "shadow", :cols => 90, :rows => 20} %><br /><br />
   <%= submit_tag "Publier" %>
 <% end %>

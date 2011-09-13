@@ -43,6 +43,16 @@ class AdminController < ApplicationController
   end
 
   def new_post
+    if request.post?
+      if params[:content] && params[:title]
+        post = Post.new({:content => params[:content], :title => params[:title], :user => User.current})
+        if post.valid?
+          post.save
+          redirect_to :action => :posts and return
+        end
+      end
+      flash[:error] = "Formulaire incomplet."
+    end
   end
 
 end
