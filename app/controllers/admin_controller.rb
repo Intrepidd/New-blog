@@ -36,5 +36,14 @@ class AdminController < ApplicationController
     redirect_to :action => :login
   end
 
+  def post
+  end
+
+  def posts
+  end
+
+  def new_post
+  end
+
 end
 
