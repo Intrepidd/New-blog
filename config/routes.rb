@@ -4,6 +4,8 @@ NewBlog::Application.routes.draw do
 
   match '/' => 'home#index'
 
+  match '/posts(/page/:page)' => "home#index"
+
   match '/about/me' => 'about#index'
 
   match '/admin/posts/new' => 'admin#new_post'

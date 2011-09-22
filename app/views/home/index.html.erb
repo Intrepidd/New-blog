@@ -1,4 +1,4 @@
-<% if @posts %>
+<% if @posts && @posts.count > 0 %>
   <% @posts.each do |p| %>
     <%= render :partial => 'posts/post', :locals => {:post => p} %>
   <% end %>
