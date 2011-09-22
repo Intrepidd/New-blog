@@ -1,0 +1,8 @@
+<%= link_to "Retour", :action => :index %>
+<br /><br />
+<h3>Posts</h3>
+<% if @posts && @posts.count > 0%>
+  <% @posts.each do |p| %>
+    <%= link_to p.title, {:action => :post, :id => p.id}%><br />
+  <% end %>
+<% end %>

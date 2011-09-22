@@ -37,9 +37,29 @@ class AdminController < ApplicationController
   end
 
   def post
+    @post = Post.find(params[:id]) rescue nil
+    redirect_to :action => :posts unless @post
+    if request.post?
+      @post.content = params[:content]
+      @post.title = params[:title]
+      if !@post.valid?
+        flash[:error] = "Article invalide" and return
+      end
+      @post.save
+      redirect_to :action => :posts
+    end
   end
 
   def posts
+    #get posts
+    page = params[:page].to_i
+    page = 1 if page < 1
+    offset = (page - 1) * 10
+    @posts = Post.find(:all, :order => "created_at DESC", :limit => 10, :offset => offset)
+    @pages = Post.count / 10
+    if (@pages <= 0)
+      @pages = 1
+    end
   end
 
   def new_post

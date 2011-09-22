@@ -1,8 +1,7 @@
 class Post < ActiveRecord::Base
-
-validates_presence_of :title, :content
-
-belongs_to :user
-
+  extend FriendlyId
+  validates_presence_of :title, :content
+  belongs_to :user
+  friendly_id :title, :use => :slugged
 end
 
