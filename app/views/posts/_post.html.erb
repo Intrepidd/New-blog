@@ -1,6 +1,6 @@
 <article>
   <header>
-    <time><a href="#"><%= post.created_at.to_time %></a></time><span class="title"><a href="#"><%= post.title %></a></span>
+    <time><%= link_to post.created_at.to_time, post.slug %></time><span class="title"><%= link_to post.title, post.slug %></span>
   </header>
   <section class="article_text">
     <%= post.content %>
