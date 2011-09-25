@@ -75,5 +75,15 @@ class AdminController < ApplicationController
     end
   end
 
+  def delete_post
+    if params[:id]
+      post = Post.find(params[:id]) rescue nil
+      if post
+        post.delete
+      end
+    end
+    redirect_to :action => :posts
+  end
+
 end
 
