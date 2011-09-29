@@ -1,0 +1,8 @@
+<% if page > 1 %>
+<%= link_to "Arcitles précédents", route+"/page/"+ (page - 1).to_s %>
+<% end %>
+<% if page < pages %>
+<% if page > 1 %>&nbsp;<% end %>
+<%= link_to "Arcitles suivants", route+"/page/"+ (page + 1).to_s %>
+<% end %>
+

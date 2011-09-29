@@ -9,6 +9,7 @@ NewBlog::Application.routes.draw do
   match '/about/me' => 'about#index'
 
   match '/admin/posts/new' => 'admin#new_post'
+  match '/admin/posts(/page/:page)' => 'admin#posts'
   match '/admin(/:action(/:id(.:format)))' => 'admin'
 
   match '/:slug' => 'post#index'

@@ -5,3 +5,5 @@
 <% else %>
   Pas d'articles pour le moment.
 <% end %>
+<br />
+<%= render :partial => 'posts/pages', :locals => {:page => @page, :pages => @pages, :route => "/posts"} %>

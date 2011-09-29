@@ -6,3 +6,5 @@
     <%= link_to p.title, {:action => :post, :id => p.id}%> - <%= link_to "Supprimer", {:action => :delete_post, :id => p.id} %><br />
   <% end %>
 <% end %>
+<br />
+<%= render :partial => 'posts/pages', :locals => {:page => @page, :pages => @pages, :route => "/admin/posts"} %>
