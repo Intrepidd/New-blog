@@ -39,3 +39,4 @@ gem 'jquery-rails'
 
 gem 'mysql2'
 gem 'friendly_id'
+gem 'less-rails-bootstrap'

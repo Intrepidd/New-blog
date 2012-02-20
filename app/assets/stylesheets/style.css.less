@@ -1,7 +1,5 @@
 
-/* Written in LESS (http://lesscss.org/) */
-
-@import "boilerplate.css";
+@import "twitter/bootstrap";
 
 /* ----------- */
 /*    Fonts    */
@@ -29,32 +27,27 @@ h1 {
 /* ----------- */
 
 body {
-  min-width:1000px;
   background-color:white;
-  width:80%;
-  margin:auto;
 }
 
 section#top {
-  width:100%;
   margin-top:35px;
   header {
-    width:60%;
     font-family: "Monaco", "Arial";
-    float:left;
-    font-size:5em;
+    #logo {
+      font-size:55px;
+      padding-bottom: 20px;
+    }
     span {
-      display:block;
-      font-size:0.4em;
+      display: block;
       padding-left:150px;
+      font-size: 20px;
       margin-top:5px;
     }
   }
+
   footer {
-    float:right;
-    padding-top:15px;
     text-align:left;
-    width:40%;
     font-size:1.2em;
     font-family: Arial;
     #whoami {
@@ -63,7 +56,6 @@ section#top {
       padding-bottom:15px;
     }
   }
-
   nav {
     width:100%;
     margin:40px 0px 20px 0px;
@@ -84,7 +76,6 @@ section#top {
 }
 
 section#content {
-  width:100%;
   article {
     header {
       border-bottom:1px solid #DBDBDB;
